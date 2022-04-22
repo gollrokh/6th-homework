@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width , initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/6th.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm"
+              />
+            </div>
+          </div>
+        </form>
+        <h1 id="city">
+          Tehran, Iran
+        </h1>
+        <ul>
+          <li id="date">Tuesday 13:01</li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="temperature" id="temperature"> 19 </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li id="max">
+                Maximum Temperature: 0%
+              </li>
+              <li id="humidity">
+                Humidity: 77%
+              </li>
+              <li id="wind">
+                Wind: 8 km/h
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/6th.js"></script>
+  </body>
+</html>
